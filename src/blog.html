@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TCC Promo Page</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <style>
+    .container{
+      padding: 10;
+      display: grid;
+      grid-template-columns: 80% 20%;
+      gap: 20px;
+
+    }
+
+  </style>
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="../src/css/tailwind-output.css" />
+  
+    <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+</head>
+<body>
+    <!--Header-->
+    <header class=" w-full border-b border-gray-100 relative pt-4 pb-4 z-20 bg-white" style="top: 0;">
+      <nav
+        class="flex align-middle justify-between relative mx-auto items-center w-full p-2 m-[0 30px] " 
+      >
+        <div class="w-full h-full gap-3 flex justify-start align-middle items-end">
+          <div>
+            <img
+              class="w-[200px] cursor-pointer"
+              src="https://www.namecheap.com/blog/wp-content/themes/theme-1_19_2/assets/images/namecheap.svg"
+              alt=""
+            />
+          </div>
+          <ul class="hidden md:flex border-l-[1px] border-black items-center justify-center">
+            <li><a class="pl-3 font-Poppins font-bold text-[26px] leading-[26px] text-[#666261]" href="">blog</a></li>
+          </ul>
+        </div>
+
+        
+          <div class="flex h-full w-full gap-10 items-end justify-end">
+            <a class="font-light text-[16px] hidden md:block leading-[16px] text-[#666261] cursor-pointer hover:border-b-[1px] border-b-slate-600"  href="" style="font-family: 'MuseoModerno', ;">Go To thecratersconnect.com</a>
+
+  
+            <span id="open_aside_menu">
+              <svg
+                class="w-6 h-6 font-light text-[16px] leading-[16px] text-[#666261] cursor-pointer"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <aside id="sidenav_aside"  class="bg-[#918a8ad4] hidden fixed top-0 right-0 left-0 w-full h-screen z-50">
+      <div class="bg-white py-10 fixed h-full w-1/2 md:w-2/6 right-0 float-right">
+        <ul class="flex flex-col gap-[0.6rem] p-5 relative ">
+          <!-- CLose Header Button -->
+          <div id="close_header_menu" class="absolute cursor-pointer right-1 top-1">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          </div>
+          <li><a href="#">Creating & Managing Content
+          </a></li>
+          <li><a href="#">Domains</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Engineering</a></li>
+          <li><a href="#">Entrepreneurial Lifestyle</a></li>
+          <li><a href="#">Managing a Business</a></li>
+          <li><a href="#">Marketing Tips</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Online Marketing</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Security & Privacy</a></li>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">WordPress</a></li>
+          <li><a href="#">Working From Home</a></li>
+          <li><a href="#">Sign up for email updates</a></li>
+          <li><a href="#">Current Deals</a></li>
+          <li><a href="#">GDPR Commitment</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Go to Samorlhosting.com</a></li>
+          <li><a href="#">Status & Updates</a></li>
+        </ul>
+        <span class="inline-flex ml-3 sm:ml-3 md:ml-3 sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a href="https://facebook.com/samorlhosting" target="_blank" class="text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a href="https://twitter.com/samorlhosting" target="_blank" class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a href="https://instagram.com/samorlhosting" target="_blank" class="ml-3 text-gray-500">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+        </span>
+
+      </div>
+    </aside>
+  
+
+  <main>
+    <div class="p-3 sm:p-5 md:p-10">
+      <img class="object-cover h-96" src="https://i0.wp.com/www.namecheap.com/blog/wp-content/uploads/2022/10/Blog-01-01.png?quality=100" alt="img"> 
+    </div>
+
+    <div class="px-5 md:px-16 pt-5 text-[#666261]">
+      <p class="font-serif">
+      Entrepreneurial Lifestyle, Managing a Business
+      </p>
+      <h1 class="pt-5 text-2xl sm:text-3xl md:text-5xl leading-10 mb-2 font-bold text-gray-800 font-Poppins">Why small businesses shouldn’t 
+    </h1>
+    <span class="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-800">fear recession </span>
+    </div>
+
+    </div>
+    <!-- grid cols area -->
+    <div class="flex flex-col md:flex-row gap-5 px-5 md:px-8 font-Montserrat">
+      <div class="item md:ml-8 pt-5 w-full md:w-[70%]">
+        <div class="border-b p-1 border-gray-200">
+          <i class="fa-regular fa-user  text-green-500 p-1"></i>
+            <span class="text-[#666261]">Undercover Geek | October 25, 2022</span>
+            <i class="fa-regular fa-message md:pl-96"><span class="p-2 text-[#666261]">0</span></i>
+        </div>
+        <div>
+          <p class="text-[#666261]">15 min read
+          </p>
+        </div>
+        <!-- paragraphs -->
+        <div class="text-[#666261] pt-10 text-sm font-Poppins">
+          <p>If there’s one thing I’ve learned while working deep within the digital tech world, it’s that during tough economic times small businesses are always on the front lines.
+            <br>
+            <br>
+
+          </p>
+          <p>You might be a small venture worried about competing with the large-scale budgets and customer bases of bigger brands. Or maybe you’re thinking about starting a side hustle to help relieve some financial pressure. Whatever your situation or plans, downturns always bring unique challenges to duck and weave through.
+
+          </p>
+          <br>
+          
+          <p>Fortunately, tucked away in my top-secret file of contacts and sources, I have a network of successful small business owners willing to spill the beans about running and starting businesses during times like these.</p>
+          <br>
+          <p>From international business mentors to catering entrepreneurs in super-hip Portland, Oregon, I went undercover and got proper advice from the small businesses leading the charge against recession. </p>
+          <br>
+
+        </div>
+          <!-- second section of the paragraph -->
+          <aside><h2 class="text-3xl font-bold pb-6 pt-10 text-gray-800 font-Poppins">First things first – don’t panic</h2></aside>
+          <div class="text-[#666261] text-sm font-serif">
+          
+          <p>Nothing says impending economic downturn like a flood of terrifying headlines and squabbling financial ‘experts’. The important thing for existing businesses especially is not to panic and make rash decisions. Don’t get swayed by negative news coverage.</p>
+          <br>
+          <p>As Stefan Thomas, owner of global networking organization <span style="color: #f14722;">Connect Network</span>, told me:</p>
+          <br>
+          <p> <span class="font-bold  pr-4">|</span>“A lot of the impact, actually, will be mindset from the constant barrage of bad news on the TV. I’ve already seen businesses publicly offer discounts before we see any real impact.”</p>
+          <br>
+          <p>Karen Skidmore, who provides <span style="color:#f14722 ;">business coaching and growth strategy</span> for service-based business owners, backs this opinion. “Many small businesses may be in danger of making knee-jerk decisions, particularly over prices.” Karen also warns that this approach can actually create a domino effect of unsustainable business models:</p>
+          <br>
+          <p> <span class="font-bold pr-4">|</span>“When emotions run high, prices are often the first things to drop in a bid to win business, which can then spiral out of control.”
+          </p>
+          <br>
+          <p>Unique events are also shaping the current situation very differently from the last recession, adding extra worry for many. For example, the war in Ukraine is impacting food and energy costs across Europe. The downturn there isn’t just being played out across a background of big numbers and charts. It feels wrapped up in global events and practical changes that people can see and feel more acutely.</p>
+          <br>
+          <p>As Helen Elizabeth Evans, owner of innovative UK-based business consultants, <span style="color: #f14722;">Hands-on-Business</span>, put it: 
+
+          </p>
+          <br>
+          <p> <span class="font-bold pr-4">|</span>““I don’t think my clients took the last so-called recession seriously. It proved to me that much of it is all just perception. The problem is this current situation is much more obvious to everyone, so likely to create wider cause for concern and impact.”</p>
+          <br>
+          <p>Of course, none of this means you should sit around doing nothing. It’s just important to establish the difference between being proactive and panicking to snap decisions. In fact, there are many reasons why small businesses actually have a headstart on bigger competitors during a downturn.
+
+          </p>
+          </div>
+          <!-- 3rd section of the paragraph -->
+            <div class="text-[#666261] text-sm font-Poppins">
+            <aside><h2 class="text-3xl font-bold pb-6 pt-10 text-gray-800 font-Poppins">Why small businesses have an advantage</h2></aside>
+
+            <p>It’s easy to feel like the bigger players are holding all the cards during a recession, but as Sara Price, owner of marketing and business training provider <span>Actually®</span>, explains, that’s not always the case:</p>
+            <br>
+            <p> <span class="font-bold  pr-4">|</span>“Smaller businesses are nimble and adaptable, with fewer overheads. At a time when clients are increasingly cost-conscious, that flexibility can be hugely attractive. Plus, we are often more entrepreneurial with less bureaucracy and a more open-minded approach to risk.”</p>
+            <br>
+            <p>So it’s like a supertanker vs. speedboat: one might be bigger and more valuable, but the other can change direction exactly when it needs to. Small businesses can pivot and launch entirely new products and ventures with much greater agility. </p>
+            <br>
+            <p>Sara goes on to mention that “Smaller businesses are often closer to their customers and better at building relationships that feel personal – inspiring loyalty and advocacy.” So you may have fewer overall customers as a small business, but more of them are likely to be loyal, which can be a vital consideration when getting through tough times.</p>
+            <br>
+            <p>Sara goes on to mention that “Smaller businesses are often closer to their customers and better at building relationships that feel personal – inspiring loyalty and advocacy.” So you may have fewer overall customers as a small business, but more of them are likely to be loyal, which can be a vital consideration when getting through tough times.</p>
+            <br>
+            <p>But how can you make sure what your offering connects with customers the right way?</p>
+
+            </div>
+            <!-- 4th paragraph section -->
+            <div class="text-[#666261] text-sm font-Poppins">
+            <aside><h2 class="text-3xl font-bold pb-6 pt-10 text-gray-800 font-Montserrat">Know your benefit and value to customers</h2></aside>
+            <p>Most customer needs don’t simply disappear during a recession. They just come under the spotlight more. People are looking for real value. Not just in terms of cost, but in necessity too. </p>
+            <br>
+              <p>As <span style="color:#f14722 ;">online marketing and copywriting strategist</span> Veronica Pullen puts it: “If your product is not perceived as valuable or vital, it will be more difficult to make sales during the recession.” It’s about making sure what you offer connects to customers at a fundamental level. This can be the difference between ‘liking’ and ‘needing.’ </p>
+              <br>
+              <p>Helen from Hands-on-Business spells it out: </p>
+              <br>
+              <p> <span class="font-bold  pr-4">|</span>“It is inevitable that any businesses selling nice-to-have products will suffer first. If you have something people in troubled times absolutely will want/need, and you know how to position it, it’ll sell.”</p>
+              <br>
+              <p>Jennifer Page, owner of <span style="color: #f14722 ;">Affinity Academy</span>, goes further, suggesting that re-assessing your products and services will give them an extra health check before the race is well and truly on: </p>
+              <br>
+              <p> <span class="font-bold pr-4">|</span>“I see it as an opportunity to assess what we do and refresh things to move forwards. To go and REALLY listen to our members’ needs and adapt to serve them better. It’s an exciting catalyst to switch things up and rise to the challenge.” 
+              </p>
+              <br>
+              <p>So it’s about offering a deeper sense of value and benefit — but what are more practical ways to find and show this to customers? 
+
+              </p>
+              <div class="mt-8 object-cover">
+                <img src="https://i0.wp.com/www.namecheap.com/blog/wp-content/uploads/2022/10/Blog-01-02.png?resize=800%2C433&ssl=1" alt="pimg">
+              </div>
+            </div>
+            <div class="text-[#666261] text-sm font-Poppins">
+              <aside><h4 class="text-3xl font-bold text-gray-800  pt-10 pb-2 ">How to find value opportunities</h4></aside>
+              <br>
+              <p>The ability to show value is vital for both existing and new businesses. So let’s take a look at how existing small businesses can actually do this in a recession.
+
+              </p>
+              <br>
+              <p class="text-2xl font-normal text-gray-700 pt-3">Listen to your customers</p>
+              <br>
+              <p>Following on from Jennifer’s previous point, it’s vital to understand your customers and their changing needs. Just as a recession can affect you, it can affect them. 
+
+              </p>
+              <br>
+              <p>Using her experiences during one of the last downturns, Karen made sure her coaching and strategy business understood the changing landscape: </p>
+              <br>
+              <p> <span class="font-bold  pr-4">|</span>“We dug in deep with our clients…put on extra calls and clinics to support the huge changes that many had to make to their businesses.”</p>
+              <br>
+              <p>“Embrace collaboration, community, and connection,” comes the advice from Sara back at Actually®, who advocates even tighter customer attention: 
+
+              </p>
+              <br>
+              <p> <span class="font-bold  pr-4">|</span>“I maintain a very close relationship with my ideal clients at all times. I nurture strong relationships, checking in to see how they are, what they need, and what their fears and hopes are.”
+
+              </p>
+              <br>
+              <p>Of course, constant customer communication may not be possible for all types of businesses, but the digital world is nothing if not resilient. There are a host of other ways to gauge customer satisfaction and needs. </p>
+              <br>
+              <p><span style="color:#f14722 ;">Customer surveys,</span> for example, are a great way to find out more from customers, alongside tactics like follow-up emails — <span style="color:#f14722 ;">just make sure they look and feel professional</span>. Other areas to explore are focus groups or <span style="color: #f14722;">starting a social media community</span> on platforms such as LinkedIn or Facebook. There’s always a way online. 
+
+              </p>
+              <br>
+              <p>As with nearly all businesses, when times are tough, it’s easy to put costs first, but the overwhelming advice from my network of small business leaders is clear — put customers first, and figure the costs out accordingly. Don’t fly blind into a downturn. As Karen re-states: “We have to make sure we keep listening to what our marketplace wants to invest in.” 
+
+              </p>
+              <br>
+              <p>So, once you know what customers want, what next? 
+
+              </p>
+              <br>
+              
+            </div>
+            <!-- fifth section of a paragraph -->
+            <div class="text-[#666261] text-sm font-Poppins">
+              <aside><h2 class="text-3xl font-light pb-6 pt-3 text-gray-800">Refocusing, expanding, or adapting your services</h2></aside>
+              <br>
+              <p>
+                Aligning an existing business with changing customer needs will probably mean a pivot of some sort, but how far you need to turn is never clear-cut to begin with. A good starting point is to think about whether you need to:</p>
+                <br>
+                <span>
+                  <ul>
+                    <li>Refocus your offering?</li>
+                    <li>Expand your offering?</li>
+                    <li>Adapt your offering?</li>
+                  </ul>
+                </span>
+                <br>
+                <p>Helen from Hand-on-Business advocates a clear-cut approach, especially when checking if you need to refocus your attention on a select group of your products: 
+
+                </p>
+                <br>
+                <p> <span class="font-bold  pr-4">|</span>“Stick to the Pareto Principle. Invest more time, energy, and money in the 20% of your business that brings in 80% of your income.” 
+
+                </p>
+                <br>
+                <p>On the other hand, Stefan from Connect Network has made sure to have several extra revenue sources, such as “speaking and consultancy work” on top of his network group — expanding to safeguard his income. </p>
+                <br>
+                <p>Jennifer from Affinity Academy has taken the option of adapting key services. For example: </p>
+                <br>
+                <p> <span class="font-bold text-gray-700 pr-4">|</span>“We’re concentrating on continued class quality and personalized care, but also enhancing the development routes and opportunities through the club. Plus we’re looking at improving the membership software for better access and easier bookings.” 
+
+                </p>
+                <br>
+                <p>There are other ways too, especially if you try to think laterally. Value can be found in the most unlikely places… even the competition! Husband and wife team Ronald & Franziska San Pedro are exploring this unusual angle with <span style="color:#f14722 ;">PDX Dönerländ,</span> their Portland-based food cart business. They’ve actually looked into “group buying deals with other food cart owners for common goods we all use.” So there are always ways to find new approaches. </p>
+                <br>
+                <p>In the end, you’ll need to decide the right way for you — even if it’s starting afresh with a new venture (more on that later). But don’t be afraid to adapt and invest in your services, even if it comes with some initial outlay — such as Affinity Academy’s software. Investing in your customers’ experience is investing in (and often safeguarding) your future. 
+
+                </p>
+                <br>
+                <p>And speaking of customer experience…</p>
+
+            </div>
+            <div class="pt-7 font-Poppins">
+              <img src="https://i0.wp.com/www.namecheap.com/blog/wp-content/uploads/2022/10/Blog-01-03.png?resize=800%2C433&ssl=1" alt="logo2">
+            </div>
+            <div class="text-[#666261] text-sm font-Poppins">
+              <aside><h2 class="text-3xl font-light pt-10 text-gray-800">Get your marketing spot on</h2></aside>
+              <br>
+              <p>When you’ve been geekering (yes it’s a word) for as long as I have, you see a lot of financial ups and downs. One thing that nearly always shrinks with the downs is marketing spend. </p>
+              <br>
+              <p>As Sara from Actually® points out: </p>
+              <br>
+              <p> <span class="font-bold  pr-4">|</span>“So many business owners make the mistake of cutting back on things like PR and marketing during a recession, but all of the research shows that those who maintain their spend – whilst also operating proper cost control – are more likely to survive the downturn and thrive in the aftermath.”
+
+              </p>
+              <br>
+              <p>The main thing is to be smart about it. Focus on your most effective methods. “No investing in anything new and untried” is Helen’s approach. Don’t throw money at your marketing to see what sticks. Just get the basics right.</p>
+              <br>
+              <p>That last point also reminded me of one of Helen’s earlier remarks: 
+
+              </p>
+              <br>
+              <p> <span class="font-bold  pr-4">|</span>“If you have something people in troubled times absolutely will want/need, and you know how to position it, it’ll sell.” </p>
+              <br>
+              <p>The fact is, that <span class="font-bold">positioning</span> and communicating your value is massively important — especially if you’re updating or changing your main offerings. This is where websites come sharply into focus. Jennifer from Affinity Academy is even investing in a new website to make things “clearer and easier” and to “help us attract new members to continue growing.”
+
+              </p>
+              <br>
+              <p>If you’re an existing business, you may not be thinking about <span style="color:#f14722 ;">building a new website</span> from scratch. But it’s 100% worth taking a look at <span style="color: #f14722;">updating your homepage messaging </span> and discovering a few <span style="color:#f14522 ;"> easy ways to optimize your site’s design</span> for more sales. That’s just a given. </p>
+              <br>
+              <p>As Stefan from Connect Network says, above all:
+
+              </p>
+              <br>
+              <p> <span class="font-bold  pr-4">|</span> “Make sure your customers and prospective customers really understand the value of what you offer.”
+
+              </p>
+              <br>
+              <p>You can also look to add things like coupons, loyalty programs, free trials, and introductory offers to help spread the word, show extra value, and <span style="color: #f14722;">keep customers coming back</span>. But fundamentally your messaging and marketing must convey the core value of your business. What do you offer that the competition doesn’t? Why do people need your business in their life? </p>
+              <br>
+              <p>This process is much easier for small businesses, with their ability to adapt to changing customer needs faster — and even launch new ventures and ideas quickly when needed. 
+
+              </p>
+              
+
+
+            </div>
+                <!-- 6th paragraph  -->
+            <div class="text-[#666261] text-sm font-poppins">
+              <aside><h2 class="text-3xl font-bold pb-6 pt-12 text-gray-800">Starting a new business successfully</h2></aside>
+              <p>
+                Starting a new business in a recession might seem counterintuitive — or just plain mad — but my network of small business leaders disagrees. 
+                
+                </p>
+                <br>
+                <p>As Veronica says: “There is never a bad time to start a business, per se. There is always opportunity.” In fact, difficult times can actually be great for launching new ventures, as Veronica goes on to highlight: 
+
+                </p>
+                <br>
+                <p> <span class="font-bold  pr-4">|</span>“Plenty of new businesses were started during the pandemic, sanitizers for example. They did very well because they were solving a problem. </p>
+                <br>
+                <p>Or as Stefan simply puts it: “When it rains, sell umbrellas.”</p>
+                <br>
+                <p>Both <span style="color:#f14722 ;">Airbnb </span> and <span style="color:#f14722 ;">Uber</span> were born during the 2008 ‘crash’, and on a smaller scale, Sara identifies that “after each of the last few recessions, we have seen a surge in entrepreneurial start-ups and small business growth.”</p>
+                <br>
+                <p>In fact, as Karen points out, startups large and small can be a major positive in times like these: “startup energy is lean and agile, and that’s what I believe you need to be as we go into a recession.”
+
+                </p>
+                <br>
+                <p>So in truth, there’s no time like the present to get going with a new small business.
+
+                </p>
+
+
+            </div>
+              <!-- 7th paragraph -->
+              <div class="text-[#666261] text-sm font-Poppins">
+                <aside><h3 class="text-2xl font-light pb-2 pt-10 text-gray-800">Run the numbers</h3></aside>
+              <p>
+                No one’s asking you to use up all that amazing startup energy on spreadsheets, but you will need to burn off a few company calories by running some numbers. </p>
+                <br>
+                <p>Karen leads off with a safety-first approach: 
+
+                </p>
+                <br>
+                <p> <span class="font-bold  pr-4">|</span>“Do your commercial due diligence. Even if something feels right, this is not the time to throw caution to the wind. Do your financial costings and make sure you are putting money aside.”</p>
+                <br>
+                <p>Despite being a startup, you need to be planning for the future. Sara gives us an insight into <span style="color: #f14722;">Actually’s</span> financial planning:</p>
+                <br>
+                <p> <span class="font-bold  pr-4">|</span>“I ensure that we always have cash reserves in the business equivalent to between 3-6 months operating expenses… in the unlikely event that all revenue were to dry up overnight, we’d be able to keep the business and the team going.”</p>
+                <br>
+                <p>Sara also goes on to highlight the importance of “continuing to pay suppliers,” which raises an equally important point about understanding your future business network and infrastructure e.g. suppliers, transport, storage, technology, energy, and so on.</p>
+                <br>
+                <p>In short, get great deals from suppliers, but make sure you aren’t over-reliant on services that could be negatively affected by a recession — special materials and delivery costs, for example. As Helen points out, many ventures may go out of business because “they are unable to get products to deliver their products.”</p>
+                <br>
+                <p>But once you’ve done the strategic and financial thinking, you can start getting ‘real’.</p>
+              </div>
+                <!-- 8th paragraph section -->
+                <div class="text-[#666261] text-sm font-Poppins">
+                  <aside><h4 class="text-2xl font-light pt-7 text-gray-800">Launch it right </h4></aside>
+                  <p>
+                    Starting a business is an exciting time. You may already be thinking about <span style="color:#f14722 ;"> finding the right business name</span>, <span style="color:#f14722 ;">designing a logo</span>, or even brainstorming your <span style="color: #f14722;">image and branding</span>. Where it all comes together, though, is your website. </p>
+                    <br>
+                    <p>Do your research, though. Just like your future customers, demand value from your digital service providers. Not just in terms of cost, but in customer support, add-on services, and extra resources to help you along — <span style="color: #F14722;">make more online, for less</span>. 
+
+                    </p>
+                    <br>
+                    <p>Once you have the technology and basics in place, you can start thinking about <span style="color:#f14722 ;">marketing your business and products</span>. Veronica offers some extra insights here:
+
+                    </p>
+                    <br>
+                    <p> <span class="font-bold  pr-4">|</span> “Offer a high-value free-to-access resource or low-cost online product to rapidly encourage your social media network to join your email list. Use the social media platforms to network with your potential customers.”</p>
+                    <br>
+                    <p>Sara’s final point here once again comes back to value: </p>
+                    <br>
+                    <p> <span class="font-bold  pr-4">|</span>“Learn how to write compelling sales copy that positions your brand as a leading authority in your niche and clearly communicates the value of your products and services.”</p>
+                    <br>
+                    <p>Most importantly, though — have a vision and a plan. 
+
+                    </p>
+
+                      <!-- last section on paragraph -->
+                      <div class="text-[#666261]text-sm font-poopins">
+                        <aside><h2 class="text-3xl font-bold pt-10 text-gray-800">What it really comes down to…</h2></aside>
+                        <br>
+                        <p>
+                          Running a successful business during a recession is also about running a business smartly all year round: being smart with your products, smart with your planning, smart with your marketing, and smart with your resources. </p>
+                          <br>
+                          <p>While the stakes may seem higher now, especially when <span style="color:#f14722 ;">launching a new business</span>, the rewards can be much greater. As Sara from Actually® learned during the last recession: </p>
+                          <br>
+                          <p> <span class="font-bold  pr-4">|</span>“If you have a business model that works during recessionary times, you will FLY when the recession ends!” </p>
+                          <br>
+                          <p>But I’ll leave the final word to Ronald and Franziska from PDX Dönerländ: 
+
+                          </p>
+                          <br>
+                          <p> <span class="font-bold  pr-4">|</span>“A lot of the impact, actually, will be mindset from the constant barrage of bad news on the TV. I’ve already seen businesses publicly offer discounts before we see any real impact.”</p>
+                          <br>
+                          <p> <span class="font-bold  pr-4">|</span>“No matter what it is you do, make sure you do the best version of it that you can possibly do.”
+                            <br>
+                            <br>
+                            Good luck out there!
+
+
+                          </p>
+
+
+
+
+                      </div>
+
+
+                </div>
+                <!-- section2 -->
+                <!-- <section>
+                  <div class="rating relative">
+                    <div class="">
+                      
+                    </div>
+                      <div style="width:60px; height: 60px; border-radius: 50%; background:grey;" >5</div>
+                  </div>
+                </section> -->
+                <!-- section3 -->
+
+                <section>
+                  <div>
+
+                    <div>
+                     <p style="background-color:#18BAAA  ; width:100%;height: max-content;border-radius: 5px; text-align: center ;padding: 10px; color: #fff;font-family:sans-serif ;" class="hover:ring-2 hover:ring-blue-200 hover:ring-offset-1 duration-150  hover:duration-150"><i class="fa-regular fa-message"></i>&nbsp;Show the conversation</p>
+                    </div>
+                    <!-- section card in first role -->
+
+                    <div style="background-color: #18BAAA; margin-top: 50px; border-radius:5px" class="overflow-hidden pb-5">
+                      <div style="padding:35px;color: #fff;">
+                        <h3 class="text-2xl md:text-3xl font-Montserrat ">Help us blog better</h3>
+                        <p class="text-sm">What would you like us to write more about?</p>
+                      </div>
+
+                      <div class="flex flex-1 flex-wrap gap-2 justify-center align-middle">
+                        <a href="" class="text-[#18BAAA] text-xs p-2 rounded-xl bg-white font-semibold capitalize">Text</a>
+                        <a href="" class="text-[#18BAAA] text-xs p-2 rounded-xl bg-white font-semibold capitalize">Text</a>
+                        <a href="" class="text-[#18BAAA] text-xs p-2 rounded-xl bg-white font-semibold capitalize">Text</a>
+                        <a href="" class="text-[#18BAAA] text-xs p-2 rounded-xl bg-white font-semibold capitalize">Text</a>
+                        <a href="" class="text-[#18BAAA] text-xs p-2 rounded-xl bg-white font-semibold capitalize">Text</a>
+                        <a href="" class="text-[#18BAAA] text-xs p-2 rounded-xl bg-white font-semibold capitalize">Text</a>
+                        <a href="" class="text-[#18BAAA] text-xs p-2 rounded-xl bg-white font-semibold capitalize">Text</a>
+                        <a href="" class="text-[#18BAAA] text-xs p-2 rounded-xl bg-white font-semibold capitalize">Text</a>
+                        <a href="" class="text-[#18BAAA] text-xs p-2 rounded-xl bg-white font-semibold capitalize">Text</a>
+                        <a href="" class="text-[#18BAAA] text-xs p-2 rounded-xl bg-white font-semibold capitalize">Text</a>
+                        <a href="" class="text-[#18BAAA] text-xs p-2 rounded-xl bg-white font-semibold capitalize">Text</a>
+                        <a href="" class="text-[#18BAAA] text-xs p-2 rounded-xl bg-white font-semibold capitalize">Text</a>
+                        <a href="" class="text-[#18BAAA] text-xs p-2 rounded-xl bg-white font-semibold capitalize">Text</a>
+                        <a href="" class="text-[#18BAAA] text-xs p-2 rounded-xl bg-white font-semibold capitalize">Text</a>
+                        <a href="" class="text-[#18BAAA] text-xs p-2 rounded-xl bg-white font-semibold capitalize">Text</a>
+                        <a href="" class="text-[#18BAAA] text-xs p-2 rounded-xl bg-white font-semibold capitalize">Text</a>
+                        <a href="" class="text-[#18BAAA] text-xs p-2 rounded-xl bg-white font-semibold capitalize">Text</a>
+                      </div>
+
+                      
+                    </div>
+                    <div style="border-bottom:1px solid rgb(244, 241, 241); margin-top: 30px;">
+                    </div>
+                  
+
+                  </div>
+                </section>
+                
+                
+                
+                <div class="flex flex-col md:flex-row align-center justify-center items-center gap-5 p-5">
+                  <img src="https://secure.gravatar.com/avatar/cb3529c24d9ca1ca12c05e10917ae0b3?s=96&d=mm&r=g" class="w-22 h-22 transition-all duration-200 hover:outline-offset-0 hover:duration-150 hover:scale-110 rounded-full outline outline-[#18BAAA] ring-offset-1 outline-offset-4 flex-none hover: hover:bg-[#18BAAA] ease-in-out" alt="img">
+                  
+                  <span class="text-sm text-[#666261] leading-6 font-serif">
+                    <h2 class="text-2xl md:text-3xl text-gray-800 pb-2 font-bold text-center md:text-left">Jackie Dana</h2>
+            
+                      <span class="text-center md:text-left block relative">
+                        Jackie has been writing since childhood. As the Namecheap blog’s content manager and regular contributor, she loves bringing helpful information about technology and business to our customers. In her free time, she enjoys drinking copious amounts of black tea, writing novels, and wrangling a gang of four-legged miscreants.
+                      </span>
+                    <br>
+                    <span class="block text-center md:text-left">
+                      <span class="text-[#f14722] ">More articles</span> written by Jackie.
+                    </span>
+                  </span>
+                  
+                  
+                  
+                </div>
+
+
+                <!-- third section -->
+    <section class="relative first-letter:">
+      <div class="py-5 md:py-10 relative">
+        <hr size="1">
+        <h1 style="left: calc(25% - 50px / 2);" class="text-lg md:text-2xl font-bold absolute md:left-52 px-2 md:px-5 top-2 md:top-5 bg-white text-black" >More articles like this</h1>
+      </div>
+
+      <div class=" mb-10 relative grid grid-cols-1 md:grid-cols-2 gap-5">
+
+        <!-- Cards -->
+        <div class="cards bg-white overflow-hidden pb-5 drop-shadow-lg group">
+          <img class=" transition-all duration-200 group-hover:duration-150 group-hover:scale-y-90  group-hover:ease-in-out cursor-pointer" style="display: block;width:394.67px;height: 200px; border-top-right-radius: 7px;border-top-left-radius: 7px;" src="https://i0.wp.com/www.namecheap.com/blog/wp-content/uploads/2022/10/Blog-02-01.png?fit=800%2C434&ssl=1" alt="cards">
+          <div class="cardcontent font-Montserrat">
+            <h1  style="font-weight:bold;padding:20px;" class="text-2xl">What the digital world thinks of the recession</h1>
+            <p class="text-[#999594] pl-6  text-sm pb-3 font-Roboto" >Undercover G. | 
+              Oct 25, 2022</p>
+              <div style="border-bottom: 1px solid rgb(246, 244, 244);width: 330px;margin-left: 20px;">
+              </div>
+              <span class="text-[#999594]"><p class="pl-6 text-sm">4 min ago <i class="fa-regular fa-message pl-56 text-lg"><span class="p-2 ">0</span></i></p></span>
+
+          </div>
+        </div>
+
+        <div class="cards bg-white overflow-hidden pb-5 drop-shadow-lg group">
+          <img class=" transition-all duration-200 group-hover:duration-150 group-hover:scale-y-90  group-hover:ease-in-out cursor-pointer" style="display: block;width:394.67px;height: 200px; border-top-right-radius: 7px;border-top-left-radius: 7px;" src="https://i0.wp.com/www.namecheap.com/blog/wp-content/uploads/2022/10/Blog-02-01.png?fit=800%2C434&ssl=1" alt="cards">
+          <div class="cardcontent font-Montserrat">
+            <h1  style="font-weight:bold;padding:20px;" class="text-2xl">What the digital world thinks of the recession</h1>
+            <p class="text-[#999594] pl-6  text-sm pb-3 font-Roboto" >Undercover G. | 
+              Oct 25, 2022</p>
+              <div style="border-bottom: 1px solid rgb(246, 244, 244);width: 330px;margin-left: 20px;">
+              </div>
+              <span class="text-[#999594]"><p class="pl-6 text-sm">4 min ago <i class="fa-regular fa-message pl-56 text-lg"><span class="p-2 ">0</span></i></p></span>
+
+          </div>
+        </div>
+        
+        <!-- next card -->
+        
+        
+        
+        
+      </div>
+
+    </section>
+          
+      </div>
+      <!-- second columns -->
+      <div id="right_subscribe_form" class="items pt-3 w-full md:w-96 mt-5 flex-auto">
+        <div style="border: 4px solid #18BAAA; padding: 22px;">
+          <div>
+            <h1 class="text-3xl font-bold text-gray-800">Get the latest news and deals </h1>
+            <p class="text-gray-700 pt-2">
+              Sign up for email updates covering blogs, offers, and lots more.</p>
+          </div>
+          <!-- radio part -->
+          <div>
+            <h2 class="text-xs font-semibold pt-3 font-Montserrat">I'd like to receive:</h2>
+            <form action="get">
+             <div>
+              <input type="checkbox" value="new blog post block w-full"> <span class="text-xs text-gray-800">New blog post alerts</span>
+             </div>
+            <div>
+                <input type="checkbox" value="new blog post block w-full"> <span class="text-xs text-gray-800">Regular newsletter and special offers</span>
+            </div>
+            </form>
+        </div>
+        <!-- search form -->
+        <div>
+          <form action="get">
+            <input type="text" class="border border-gray-300 rounded px-2 py-2 focus:ring-2 focus:ring-yellow-600 focus:ring-offset-1 outline-none hover:outline-none text-sm" placeholder="Enter your email">
+            <button class="rounded-r-lg font-Montserrat bg-[#f14722] py-2 px-3 text-sm text-white" type="submit">subscribe</button>
+          </form>
+        </div>
+          <div>
+            <p style="font-size:11px ; color:gray;padding-top: 7px;font-family:sans-serif;">Your data is kept safe and private in line with our values and the</p>
+            <span style="font-size:12px; color:#f14722">GDPR</span>
+          </div>
+        </div>
+        <br>
+        <!-- last part of the fixed section -->
+        <div style="background-color: #18BAAA;height: 135px; border-radius: 5px; padding: 20px; padding-bottom: 20px;" class=" w-full flex flex-col text-white text-3xl  place-content-center place-items-center font-Poppins group" >
+          <p class="group-hover:border-b border-white">Current Deals at</p>
+          <span class="group-hover:border-b border-white">Namecheap 
+            <i class="fa-solid fa-arrow-right text-xl group-hover:translate-x-1 hover:underline"></i>
+          </span>
+        </div>
+        <!-- social icons -->
+        <div class="p-5 ml-3">
+          <ul class="flex justify-center align-middle items-center gap-2 text-[#18BAAA]">
+            <li style="border-radius:50%;background-color: #fff;width: 30px;height: 30px;border:2px solid #18BAAA;"><a href="#"></a><i class="fa-brands fa-facebook-f p-2 pt-1"></i></li>
+            <li style="border-radius:50%;background-color: #fff;width: 30px;height: 30px;border:2px solid #18BAAA;"><a href="#"></a><i class="fa-brands fa-twitter p-1 pt-1"></i></li>
+            <li style="border-radius:50%;background-color: #fff;width: 30px;height: 30px;border:2px solid #18BAAA;"><a href="#"></a><i class="fa-brands fa-linkedin-in p-2 pt-1 place-content-center place-items-center"></i></li>
+            <li style="border-radius:50%;background-color: #fff;width: 30px;height: 30px;border:2px solid #18BAAA;"><a href="#"></a><i class="fa-brands fa-facebook-messenger p-1 pt-1 place-content-center place-items-center"></i></li>
+            
+            
+            <li class="text-4xl"><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+            
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  
+    
+    <!-- last section -->
+    <section 
+    class="w-full py-20 object-cover bg-[url('https://i0.wp.com/www.namecheap.com/blog/wp-content/uploads/2022/10/Protecting-yourself-from-school-surveillance-tech.png?fit=794%2C431&ssl=1')] bg-cover bg-center bg-no-repeat flex place-content-center place-items-center bg-[#0000008a] bg-blend-overlay">
+    <div class="relative flex place-items-center place-content-center flex-col gap-1 text-white align-middle items-center justify-center group">
+
+      <h1 class="text-lg md:text-xl">Next post</h1>
+      <hr>
+      <p class="text-2xl md:text-4xl text-center">Protect yourself from school surveillance tech</p>
+        <p class="text-sm group-hover:underline">Read more <i class="fa-solid fa-arrow-right hover:translate-x-1.5"></i></p>
+    </div>
+    </section>
+
+
+
+
+  </main>
+
+
+  <footer></footer>
+  
+  <script>
+    $(document).ready(function () {
+      let __headerPosition = $("header").position().top;
+      let __leftSubscribeForm = $("#right_subscribe_form").position().top;
+
+      $(window).scroll(function () {
+        
+      });
+      
+    });
+  </script>
+
+
+ <!--Footer  -->
+ <footer class="text-gray-600 font-Montserrat">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div class="w-64 flex-shrink-0 md:mx-0 text-left px-4 ">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        
+        <span class="md:ml-3 text-3xl font-Inter ">thecratersconnect</span>
+      </a>
+      <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
+    </div>
+    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 text-left">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase font-Poppins ">Domains</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+          </li>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-100 font-Poppins">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-500 text-sm text-center sm:text-left">© 2021 thecratersconnect &copy;
+        <a href="https://thecratersconnect.com" target="_blank" rel="noopener noreferrer" class="text-blue-700 ml-1" target="_blank">thecratersconnect</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a href="https://facebook.com/thecratersconnect" target="_blank" class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a href="https://twitter.com/thecratersconnect" target="_blank" class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a href="https://instagram.com/thecratersconnect" target="_blank" class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <!-- <a href="https://" class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a> -->
+      </span>
+    </div>
+  </div>
+</footer>
+ 
+
+<script src="./js/main.js"></script>
+</body>
+</html>

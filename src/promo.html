@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promo Page</title>
+
+    <link rel="stylesheet" href="./css/tailwind-output.css">
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  </head>
+  <body class="promo">
+      <!--Header-->
+    <header class=" w-full border-b border-gray-100 relative pt-4 pb-4 z-20 bg-white" style="top: 0;">
+      <nav
+        class="flex align-middle justify-between relative mx-auto items-center w-full p-2 m-[0 30px] " 
+      >
+        <div class="w-full h-full gap-3 flex justify-start align-middle items-end">
+          <div>
+            <img
+              class="w-[200px] cursor-pointer"
+              src="https://www.namecheap.com/blog/wp-content/themes/theme-1_19_2/assets/images/namecheap.svg"
+              alt=""
+            />
+          </div>
+          <ul class="hidden md:flex border-l-[1px] border-black items-center justify-center">
+            <li><a class="pl-3 font-Poppins font-bold text-[26px] leading-[26px] text-[#666261]" href="">blog</a></li>
+          </ul>
+        </div>
+
+        
+          <div class="flex h-full w-full gap-10 items-end justify-end">
+            <a class="font-light text-[16px] hidden md:block leading-[16px] text-[#666261] cursor-pointer hover:border-b-[1px] border-b-slate-600"  href="" style="font-family: 'MuseoModerno', ;">Go To thecratersconnect.com</a>
+
+  
+            <span id="open_aside_menu">
+              <svg
+                class="w-6 h-6 font-light text-[16px] leading-[16px] text-[#666261] cursor-pointer"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <aside id="sidenav_aside" style="z-index: 999999999;" class="bg-[#918a8ad4] hidden fixed top-0 right-0 left-0 w-full h-screen z-50">
+      <div class="bg-white py-10 fixed h-full w-1/2 md:w-2/6 right-0 float-right">
+        <ul class="flex flex-col gap-[0.6rem] p-5 relative ">
+          <!-- CLose Header Button -->
+          <div id="close_header_menu" class="absolute cursor-pointer right-1 top-1">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          </div>
+          <li><a href="#">Creating & Managing Content
+          </a></li>
+          <li><a href="#">Domains</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Engineering</a></li>
+          <li><a href="#">Entrepreneurial Lifestyle</a></li>
+          <li><a href="#">Managing a Business</a></li>
+          <li><a href="#">Marketing Tips</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Online Marketing</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Security & Privacy</a></li>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">WordPress</a></li>
+          <li><a href="#">Working From Home</a></li>
+          <li><a href="#">Sign up for email updates</a></li>
+          <li><a href="#">Current Deals</a></li>
+          <li><a href="#">GDPR Commitment</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Go to Samorlhosting.com</a></li>
+          <li><a href="#">Status & Updates</a></li>
+        </ul>
+        <span class="inline-flex ml-3 sm:ml-3 md:ml-3 sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a href="https://facebook.com/samorlhosting" target="_blank" class="text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a href="https://twitter.com/samorlhosting" target="_blank" class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a href="https://instagram.com/samorlhosting" target="_blank" class="ml-3 text-gray-500">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+        </span>
+
+      </div>
+    </aside>
+
+      <div style="width: 100%; height: max-content;">
+        <section class="promo gb-hero bg-[url('https://static.nc-img.com/pp/cms/promos/images/promos-hero.c463cb6e36e20b9fddaeb446d04058f5.svg')] h-60 bg-cover bg-center flex place-items-center place-content-center" style="background-color:#2b0f75 ;">
+         
+          <div class="promo gb-hero__body flex gap-2 flex-col align-middle items-center justify-center">
+            <h1 class="font-semibold text-white text-3xl sm:text-4xl md:text-5xl font-Raleway">Our current deals</h1>
+            <p class="leading-5 font-NotoSans text-lg text-center md:text-left md:text-xl font-normal text-white">Make more online12, for less, with our biggest savings</p>
+            </div>
+        </section>
+      </div>
+
+
+
+      <main class="p-5 md:p-0">
+
+        <section class="place-items-center place-content-center flex justify-center gap-10 px-1 m-auto py-10 promos_page clear-both float-none w-full az-productpromos">
+          <div class="flex flex-wrap justify-center az-promos-card-list__wrapper">
+            
+          <!-- Cards -->
+          <div data-id="domains" class="float-left w-full sm:w-[250px] md:w-[270px] lg:w-[300px] my-5 mx-2 group hover:shadow-2xl transition-all duration-150 hover:duration-150 border flex flex-col gap-15 justify-between border-gray-200 shadow-lg rounded-lg relative bg-blue-600 text-white  m-auto">
+            <a href="#">
+              <div>
+                <img src="https://static.nc-img.com/pp/cms/promos/images/thumb-2021-coupons.438c4be18c2a4381e23cb140ae69d2ea.png" class="w-full object-cover h-40 rounded-t-md" alt="promo codes">
+                <div class="py-3 px-4 pt-7 flex flex-col gap-2">
+                  <div class="title text-left text-xl font-IBMPlexSans font-semibold">Monthly Promo Codes</div>
+                  <div class="description">
+                    Check out this month’s top promo codes to make huge savings across our product range.
+                  </div>
+                </div>
+              </div>
+  
+             <div class="block relative overflow-hidden pb-5">
+              <a href="#" class=" text-lg px-3 pl-5 mb-4 text-white font-semibold font-Outfit transition-all duration-150 group">View promo codes <span class="group-hover:pl-3 transition-all duration-200 hover:duration-200">→</span></a>
+             </div>
+            </a>
+          </div>
+
+          <!-- Cards -->
+          <div data-id="domains" class="float-left w-full sm:w-[250px] md:w-[270px] lg:w-[300px] my-5 mx-2 group hover:shadow-2xl transition-all duration-150 hover:duration-150 border flex flex-col gap-15 justify-between border-gray-200 shadow-lg rounded-lg relative bg-white text-gray-500 m-auto">
+            
+            <a href="#">
+              <div>
+                <img src="https://static.nc-img.com/pp/cms/promos/images/thumb-2021-coupons.438c4be18c2a4381e23cb140ae69d2ea.png" class="w-full object-cover h-40 rounded-t-md" alt="promo codes">
+                <div class="py-3 px-4 pt-7 flex flex-col gap-2">
+                  <div  class="title text-left text-xl font-Raleway font-semibold">Monthly Promo Codes</div>
+                  <div class="description">
+                    Check out this month’s top promo codes to make huge savings across our product range.
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="block relative overflow-hidden pb-5">
+  
+                <div class="flex flex-col gap-2 p-4 font-Poppins">
+                  <span class="font-Barlow">From</span>
+                  <span class="font-Barlow text-lg font-semibold">$1.50/mo 2 years</span>
+                  
+                </div>
+                <a href="#" class="px-3 pl-5 mb-4 text-red-600 group-hover:underline  font-normal font-Outfit transition-all duration-150 group text-[16px]">Get Offers <span class="group-hover:pl-3 transition-all duration-200 hover:duration-200">→</span></a>
+              </div>
+  
+              <div class="absolute -top-4 left-5 flex gap-2">
+                <!-- Popup message -->
+                <div class=" rounded text-xs px-2 py-1 error text-white">
+                  Free Trail
+                </div>  
+                <!-- Popup message -->
+                <div class=" rounded text-xs px-2 py-1 success text-white">
+                  New
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Cards -->
+          <div data-id="domains" class="float-left w-full sm:w-[250px] md:w-[270px] lg:w-[300px] my-5 mx-2 group hover:shadow-2xl transition-all duration-150 hover:duration-150 border flex flex-col gap-15 justify-between border-gray-200 shadow-lg rounded-lg relative bg-white text-gray-500 m-auto">
+            
+            <a href="#">
+              <div>
+                <img src="https://static.nc-img.com/pp/cms/promos/images/thumb-2021-coupons.438c4be18c2a4381e23cb140ae69d2ea.png" class="w-full object-cover h-40 rounded-t-md" alt="promo codes">
+                <div class="py-3 px-4 pt-7 flex flex-col gap-2">
+                  <div  class="title text-left text-xl font-Raleway font-semibold">Monthly Promo Codes</div>
+                  <div class="description">
+                    Check out this month’s top promo codes to make huge savings across our product range.
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="block relative overflow-hidden pb-5">
+  
+                <div class="flex flex-col gap-2 p-4 font-Poppins">
+                  <span class="font-Barlow">From</span>
+                  <span class="font-Barlow text-lg font-semibold">$1.50/mo 2 years</span>
+                  
+                </div>
+                <a href="#" class="px-3 pl-5 mb-4 text-red-600 group-hover:underline  font-normal font-Outfit transition-all duration-150 group text-[16px]">Get Offers <span class="group-hover:pl-3 transition-all duration-200 hover:duration-200">→</span></a>
+              </div>
+  
+              <div class="absolute -top-4 left-5 flex gap-2">
+                <!-- Popup message -->
+                <div class=" rounded text-xs px-2 py-1 error text-white">
+                  Free Trail
+                </div>  
+                <!-- Popup message -->
+                <div class=" rounded text-xs px-2 py-1 success text-white">
+                  New
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Cards -->
+          <div data-id="domains" class="float-left w-full sm:w-[250px] md:w-[270px] lg:w-[300px] my-5 mx-2 group hover:shadow-2xl transition-all duration-150 hover:duration-150 border flex flex-col gap-15 justify-between border-gray-200 shadow-lg rounded-lg relative bg-white text-gray-500 m-auto">
+            
+            <a href="#">
+              <div>
+                <img src="https://static.nc-img.com/pp/cms/promos/images/thumb-2021-coupons.438c4be18c2a4381e23cb140ae69d2ea.png" class="w-full object-cover h-40 rounded-t-md" alt="promo codes">
+                <div class="py-3 px-4 pt-7 flex flex-col gap-2">
+                  <div  class="title text-left text-xl font-Raleway font-semibold">Monthly Promo Codes</div>
+                  <div class="description">
+                    Check out this month’s top promo codes to make huge savings across our product range.
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="block relative overflow-hidden pb-5">
+  
+                <div class="flex flex-col gap-2 p-4 font-Poppins">
+                  <span class="font-Barlow">From</span>
+                  <span class="font-Barlow text-lg font-semibold">$1.50/mo 2 years</span>
+                  
+                </div>
+                <a href="#" class="px-3 pl-5 mb-4 text-red-600 group-hover:underline  font-normal font-Outfit transition-all duration-150 group text-[16px]">Get Offers <span class="group-hover:pl-3 transition-all duration-200 hover:duration-200">→</span></a>
+              </div>
+  
+              <div class="absolute -top-4 left-5 flex gap-2">
+                <!-- Popup message -->
+                <div class=" rounded text-xs px-2 py-1 error text-white">
+                  Free Trail
+                </div>  
+                <!-- Popup message -->
+                <div class=" rounded text-xs px-2 py-1 success text-white">
+                  New
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Cards -->
+          <div data-id="domains" class="float-left w-full sm:w-[250px] md:w-[270px] lg:w-[300px] my-5 mx-2 group hover:shadow-2xl transition-all duration-150 hover:duration-150 border flex flex-col gap-15 justify-between border-gray-200 shadow-lg rounded-lg relative bg-white text-gray-500 m-auto">
+            
+            <a href="#">
+              <div>
+                <img src="https://static.nc-img.com/pp/cms/promos/images/thumb-2021-coupons.438c4be18c2a4381e23cb140ae69d2ea.png" class="w-full object-cover h-40 rounded-t-md" alt="promo codes">
+                <div class="py-3 px-4 pt-7 flex flex-col gap-2">
+                  <div  class="title text-left text-xl font-Raleway font-semibold">Monthly Promo Codes</div>
+                  <div class="description">
+                    Check out this month’s top promo codes to make huge savings across our product range.
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="block relative overflow-hidden pb-5">
+  
+                <div class="flex flex-col gap-2 p-4 font-Poppins">
+                  <span class="font-Barlow">From</span>
+                  <span class="font-Barlow text-lg font-semibold">$1.50/mo 2 years</span>
+                  
+                </div>
+                <a href="#" class="px-3 pl-5 mb-4 text-red-600 group-hover:underline  font-normal font-Outfit transition-all duration-150 group text-[16px]">Get Offers <span class="group-hover:pl-3 transition-all duration-200 hover:duration-200">→</span></a>
+              </div>
+  
+              <div class="absolute -top-4 left-5 flex gap-2">
+                <!-- Popup message -->
+                <div class=" rounded text-xs px-2 py-1 error text-white">
+                  Free Trail
+                </div>  
+                <!-- Popup message -->
+                <div class=" rounded text-xs px-2 py-1 success text-white">
+                  New
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Cards -->
+          <div data-id="domains" class="float-left w-full sm:w-[250px] md:w-[270px] lg:w-[300px] my-5 mx-2 group hover:shadow-2xl transition-all duration-150 hover:duration-150 border flex flex-col gap-15 justify-between border-gray-200 shadow-lg rounded-lg relative bg-white text-gray-500 m-auto">
+            
+            <a href="#">
+              <div>
+                <img src="https://static.nc-img.com/pp/cms/promos/images/thumb-2021-coupons.438c4be18c2a4381e23cb140ae69d2ea.png" class="w-full object-cover h-40 rounded-t-md" alt="promo codes">
+                <div class="py-3 px-4 pt-7 flex flex-col gap-2">
+                  <div  class="title text-left text-xl font-Raleway font-semibold">Monthly Promo Codes</div>
+                  <div class="description">
+                    Check out this month’s top promo codes to make huge savings across our product range.
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="block relative overflow-hidden pb-5">
+  
+                <div class="flex flex-col gap-2 p-4 font-Poppins">
+                  <span class="font-Barlow">From</span>
+                  <span class="font-Barlow text-lg font-semibold">$1.50/mo 2 years</span>
+                  
+                </div>
+                <a href="#" class="px-3 pl-5 mb-4 text-red-600 group-hover:underline  font-normal font-Outfit transition-all duration-150 group text-[16px]">Get Offers <span class="group-hover:pl-3 transition-all duration-200 hover:duration-200">→</span></a>
+              </div>
+  
+              <div class="absolute -top-4 left-5 flex gap-2">
+                <!-- Popup message -->
+                <div class=" rounded text-xs px-2 py-1 error text-white">
+                  Free Trail
+                </div>  
+                <!-- Popup message -->
+                <div class=" rounded text-xs px-2 py-1 success text-white">
+                  New
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Cards -->
+          <div data-id="domains" class="float-left w-full sm:w-[250px] md:w-[270px] lg:w-[300px] my-5 mx-2 group hover:shadow-2xl transition-all duration-150 hover:duration-150 border flex flex-col gap-15 justify-between border-gray-200 shadow-lg rounded-lg relative bg-white text-gray-500 m-auto">
+            
+            <a href="#">
+              <div>
+                <img src="https://static.nc-img.com/pp/cms/promos/images/thumb-2021-coupons.438c4be18c2a4381e23cb140ae69d2ea.png" class="w-full object-cover h-40 rounded-t-md" alt="promo codes">
+                <div class="py-3 px-4 pt-7 flex flex-col gap-2">
+                  <div  class="title text-left text-xl font-Raleway font-semibold">Monthly Promo Codes</div>
+                  <div class="description">
+                    Check out this month’s top promo codes to make huge savings across our product range.
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="block relative overflow-hidden pb-5">
+  
+                <div class="flex flex-col gap-2 p-4 font-Poppins">
+                  <span class="font-Barlow">From</span>
+                  <span class="font-Barlow text-lg font-semibold">$1.50/mo 2 years</span>
+                  
+                </div>
+                <a href="#" class="px-3 pl-5 mb-4 text-red-600 group-hover:underline  font-normal font-Outfit transition-all duration-150 group text-[16px]">Get Offers <span class="group-hover:pl-3 transition-all duration-200 hover:duration-200">→</span></a>
+              </div>
+  
+              <div class="absolute -top-4 left-5 flex gap-2">
+                <!-- Popup message -->
+                <div class=" rounded text-xs px-2 py-1 error text-white">
+                  Free Trail
+                </div>  
+                <!-- Popup message -->
+                <div class=" rounded text-xs px-2 py-1 success text-white">
+                  New
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Cards -->
+          <div data-id="domains" class="float-left w-full sm:w-[250px] md:w-[270px] lg:w-[300px] my-5 mx-2 group hover:shadow-2xl transition-all duration-150 hover:duration-150 border flex flex-col gap-15 justify-between border-gray-200 shadow-lg rounded-lg relative bg-white text-gray-500 m-auto">
+            
+            <a href="#">
+              <div>
+                <img src="https://static.nc-img.com/pp/cms/promos/images/thumb-2021-coupons.438c4be18c2a4381e23cb140ae69d2ea.png" class="w-full object-cover h-40 rounded-t-md" alt="promo codes">
+                <div class="py-3 px-4 pt-7 flex flex-col gap-2">
+                  <div  class="title text-left text-xl font-Raleway font-semibold">Monthly Promo Codes</div>
+                  <div class="description">
+                    Check out this month’s top promo codes to make huge savings across our product range.
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="block relative overflow-hidden pb-5">
+  
+                <div class="flex flex-col gap-2 p-4 font-Poppins">
+                  <span class="font-Barlow">From</span>
+                  <span class="font-Barlow text-lg font-semibold">$1.50/mo 2 years</span>
+                  
+                </div>
+                <a href="#" class="px-3 pl-5 mb-4 text-red-600 group-hover:underline  font-normal font-Outfit transition-all duration-150 group text-[16px]">Get Offers <span class="group-hover:pl-3 transition-all duration-200 hover:duration-200">→</span></a>
+              </div>
+  
+              <div class="absolute -top-4 left-5 flex gap-2">
+                <!-- Popup message -->
+                <div class=" rounded text-xs px-2 py-1 error text-white">
+                  Free Trail
+                </div>  
+                <!-- Popup message -->
+                <div class=" rounded text-xs px-2 py-1 success text-white">
+                  New
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Cards -->
+          <div data-id="domains" class="float-left w-full sm:w-[250px] md:w-[270px] lg:w-[300px] my-5 mx-2 group hover:shadow-2xl transition-all duration-150 hover:duration-150 border flex flex-col gap-15 justify-between border-gray-200 shadow-lg rounded-lg relative bg-white text-gray-500 m-auto">
+            
+            <a href="#">
+              <div>
+                <img src="https://static.nc-img.com/pp/cms/promos/images/thumb-2021-coupons.438c4be18c2a4381e23cb140ae69d2ea.png" class="w-full object-cover h-40 rounded-t-md" alt="promo codes">
+                <div class="py-3 px-4 pt-7 flex flex-col gap-2">
+                  <div  class="title text-left text-xl font-Raleway font-semibold">Monthly Promo Codes</div>
+                  <div class="description">
+                    Check out this month’s top promo codes to make huge savings across our product range.
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="block relative overflow-hidden pb-5">
+  
+                <div class="flex flex-col gap-2 p-4 font-Poppins">
+                  <span class="font-Barlow">From</span>
+                  <span class="font-Barlow text-lg font-semibold">$1.50/mo 2 years</span>
+                  
+                </div>
+                <a href="#" class="px-3 pl-5 mb-4 text-red-600 group-hover:underline  font-normal font-Outfit transition-all duration-150 group text-[16px]">Get Offers <span class="group-hover:pl-3 transition-all duration-200 hover:duration-200">→</span></a>
+              </div>
+  
+              <div class="absolute -top-4 left-5 flex gap-2">
+                <!-- Popup message -->
+                <div class=" rounded text-xs px-2 py-1 error text-white">
+                  Free Trail
+                </div>  
+                <!-- Popup message -->
+                <div class=" rounded text-xs px-2 py-1 success text-white">
+                  New
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Cards -->
+          <div data-id="domains" class="float-left w-full sm:w-[250px] md:w-[270px] lg:w-[300px] my-5 mx-2 group hover:shadow-2xl transition-all duration-150 hover:duration-150 border flex flex-col gap-15 justify-between border-gray-200 shadow-lg rounded-lg relative bg-white text-gray-500 m-auto">
+            
+            <a href="#">
+              <div>
+                <img src="https://static.nc-img.com/pp/cms/promos/images/thumb-2021-coupons.438c4be18c2a4381e23cb140ae69d2ea.png" class="w-full object-cover h-40 rounded-t-md" alt="promo codes">
+                <div class="py-3 px-4 pt-7 flex flex-col gap-2">
+                  <div  class="title text-left text-xl font-Raleway font-semibold">Monthly Promo Codes</div>
+                  <div class="description">
+                    Check out this month’s top promo codes to make huge savings across our product range.
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="block relative overflow-hidden pb-5">
+  
+                <div class="flex flex-col gap-2 p-4 font-Poppins">
+                  <span class="font-Barlow">From</span>
+                  <span class="font-Barlow text-lg font-semibold">$1.50/mo 2 years</span>
+                  
+                </div>
+                <a href="#" class="px-3 pl-5 mb-4 text-red-600 group-hover:underline  font-normal font-Outfit transition-all duration-150 group text-[16px]">Get Offers <span class="group-hover:pl-3 transition-all duration-200 hover:duration-200">→</span></a>
+              </div>
+  
+              <div class="absolute -top-4 left-5 flex gap-2">
+                <!-- Popup message -->
+                <div class=" rounded text-xs px-2 py-1 error text-white">
+                  Free Trail
+                </div>  
+                <!-- Popup message -->
+                <div class=" rounded text-xs px-2 py-1 success text-white">
+                  New
+                </div>
+              </div>
+            </a>
+          </div>
+          </div>
+
+        </section>
+         
+        <!-- Subscribe Section -->
+        <section class="w-full md:max-w-[980px] float-none clear-both p-3 py-10 rounded px-5 mx-auto bg-white drop-shadow-2xl my-10 flex flex-col md:flex-row gap-10">
+           <div class="flex flex-col gap-5">
+              <h2 class="text-2xl font-Raleway text-[#6d6e70] font-semibold">Never Miss Another Promo</h2>
+
+              <span class="font-Poppins font-normal ">
+                Subscribe to our monthly roundup to get the latest thecratersconnect deals direct to your inbox.
+              </span>
+           </div>
+           <div class="m-auto">
+              <form action="./" method="POST" class="block sm:flex p-0 m-0 gap-2">
+                <input type="search" name="search" id="search" class="text-slate-600 border border-gray-500 rounded w-full sm:w-max px-5 py-3" placeholder="Enter your email address">
+                <button title="Click to get latest promos and discounts" type="submit" class="bg-red-600 mt-2 sm:mt-0 transition-all duration-150 hover:duration-150 hover:bg-white border border-transparent hover:border-red-600 hover:text-red-600 text-white fonr-Raleway px-8 py-3 rounded ">Subscribe</button>
+              </form>
+           </div>
+        </section>
+
+        <section class="flex flex-col gap-10 place-content-center place-items-center py-10 px-0 sm:px-16 md:px-24 pt-28">
+          <span class="font-semibold block relative text-4xl font-NotoSans">Why TCC</span>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+              <div class="bg-slate-400 text-white font-Raleway py-10 px-5 rounded-lg">
+                  <h2 class="text-2xl text-gray-700 font-Barlow mb-2 font-[500]">Privacy and security</h2>
+                  <span>
+                    Your <a href="https://thecratersconnect.com" target="_blank" class="text-red-600">website security</a> and privacy comes first at Namecheap, and we will always support the rights of individuals and consumers online. It’s our mission to keep the Internet open, free, and safe for everyone.
+                  </span>
+              </div>
+
+              <div class="bg-slate-400 text-white font-Raleway py-10 px-5 rounded-lg">
+                  <h2 class="text-2xl text-gray-700 font-Barlow mb-2 font-[500]">Your business online</h2>
+                  <span>
+                    Boost your business with industry-premium products and services, at prices that won’t break your budget. If it doesn’t provide you with a better Internet experience, we simply don’t offer it.
+                  </span>
+              </div>
+
+              <div class="bg-slate-400 text-white font-Raleway py-10 px-5 rounded-lg">
+                  <h2 class="text-2xl text-gray-700 font-Barlow mb-2 font-[500]">Customer service</h2>
+                  <span>
+                    You’re covered by a <a href="https://thecratersconnect.com" target="_blank" class="text-red-600">Support Team</a> that’s renowned for being one of the most knowledgeable, friendly, and professional in the business. Real people are ready to assist you with any issue, any time, 24/7.
+                  </span>
+              </div>
+
+          </div>
+
+          <a href="https://samorlhosting.com" target="_blank">
+            <img src="./images/banner-hosting.png" alt="Fast and Secured Cloud Hosting Provider">
+          </a>
+        </section>
+
+
+        <hr size="2">
+
+        <section class="px-0 sm:px-16 md:px-24 py-10">
+          <div class="flex flex-col gap-5">
+            <h2 class="font-semibold font-Inter text-3xl">Teams and Conditions</h2>
+            <ul class="list-disc pl-14">
+              <li class="text-gray-600 font-Barlow mb-1">Namecheap reserves the right to alter or amend promotional offers at any time.</li>
+              <li class="text-gray-600 font-Barlow mb-1">Namecheap reserves the right to alter or amend promotional offers at any time.</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <!--Footer  -->
+      <footer class="text-gray-600 font-Montserrat">
+        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+          <div class="w-64 flex-shrink-0 md:mx-0 text-left px-4 ">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+              
+              <span class="md:ml-3 text-3xl font-Inter ">thecratersconnect</span>
+            </a>
+            <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
+          </div>
+          <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 text-left">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase font-Poppins ">Domains</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-100 font-Poppins">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">© 2021 thecratersconnect &copy;
+              <a href="https://thecratersconnect.com" target="_blank" rel="noopener noreferrer" class="text-blue-700 ml-1" target="_blank">thecratersconnect</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <a href="https://facebook.com/thecratersconnect" target="_blank" class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a href="https://twitter.com/thecratersconnect" target="_blank" class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a href="https://instagram.com/thecratersconnect" target="_blank" class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <!-- <a href="https://" class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a> -->
+            </span>
+          </div>
+        </div>
+      </footer>
+       
+
+      <script src="./js/main.js"></script>
+  </body>
+</html>

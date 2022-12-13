@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TCC-BLOG</title>
+
+    <link rel="stylesheet" href="./css/input.css">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="../src/css/tailwind-output.css" />
+
+    <!--Font-awesome-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+    
+  </head>
+  <body>
+    <!--Header-->
+    <header class=" w-full border-b border-gray-100 relative pt-4 pb-4 z-20 bg-white" style="top: 0;">
+      <nav
+        class="flex align-middle justify-between relative mx-auto items-center w-full p-2 m-[0 30px] " 
+      >
+        <div class="w-full h-full gap-3 flex justify-start align-middle items-end">
+          <div>
+            <img
+              class="w-[200px] cursor-pointer"
+              src="https://www.namecheap.com/blog/wp-content/themes/theme-1_19_2/assets/images/namecheap.svg"
+              alt=""
+            />
+          </div>
+          <ul class="hidden md:flex border-l-[1px] border-black items-center justify-center">
+            <li><a class="pl-3 font-Poppins font-bold text-[26px] leading-[26px] text-[#666261]" href="">blog</a></li>
+          </ul>
+        </div>
+
+        
+          <div class="flex h-full w-full gap-10 items-end justify-end">
+            <a class="font-light text-[16px] hidden md:block leading-[16px] text-[#666261] cursor-pointer hover:border-b-[1px] border-b-slate-600"  href="" style="font-family: 'MuseoModerno', ;">Go To thecratersconnect.com</a>
+
+  
+            <span id="open_aside_menu">
+              <svg
+                class="w-6 h-6 font-light text-[16px] leading-[16px] text-[#666261] cursor-pointer"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <aside id="sidenav_aside" style="z-index: 999999999;" class="bg-[#918a8ad4] hidden fixed top-0 right-0 left-0 w-full h-screen z-50">
+      <div class="bg-white py-10 fixed h-full w-1/2 md:w-2/6 right-0 float-right">
+        <ul class="flex flex-col gap-[0.6rem] p-5 relative ">
+          <!-- CLose Header Button -->
+          <div id="close_header_menu" class="absolute cursor-pointer right-1 top-1">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          </div>
+          <li><a href="#">Creating & Managing Content
+          </a></li>
+          <li><a href="#">Domains</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Engineering</a></li>
+          <li><a href="#">Entrepreneurial Lifestyle</a></li>
+          <li><a href="#">Managing a Business</a></li>
+          <li><a href="#">Marketing Tips</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Online Marketing</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Security & Privacy</a></li>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">WordPress</a></li>
+          <li><a href="#">Working From Home</a></li>
+          <li><a href="#">Sign up for email updates</a></li>
+          <li><a href="#">Current Deals</a></li>
+          <li><a href="#">GDPR Commitment</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Go to Samorlhosting.com</a></li>
+          <li><a href="#">Status & Updates</a></li>
+        </ul>
+        <span class="inline-flex ml-3 sm:ml-3 md:ml-3 sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a href="https://facebook.com/samorlhosting" target="_blank" class="text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a href="https://twitter.com/samorlhosting" target="_blank" class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a href="https://instagram.com/samorlhosting" target="_blank" class="ml-3 text-gray-500">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+        </span>
+
+      </div>
+    </aside>
+
+    <section class="w-full h-full"> 
+      <div class="relative bg-cover bg-no-repeat bg-center p-6 h-80 w-full bg-[url(https://www.namecheap.com/blog/wp-content/themes/theme-1_19_2/assets/images/author_background.png)] ">
+        <div class="absolute -bottom-20 left-40">
+          <img class="h-40 w-40 rounded-full border-4 border-white " src="https://secure.gravatar.com/avatar/b2dcff2b0cae6ba36254f446cffe9b95?s=128&d=mm&r=g" alt="">
+        </div>
+
+      </div>
+    </section>
+    <section>
+      <div class="w-full md:w-[70%] lg:w-1/2 mx-auto mt-28 pl-5 pr-5">
+        <div>
+          <span>
+            <h1 class="font-[700] text-[32px] leading-[38px] text-[#333130]">Richard King</h1>
+
+          </span>
+          <span>
+            <p class="font-[300] text-[16px] leading-[24px] text-[#666261]">Richard is a technology copywriter who aims to simplify the complex world around us using words. As well as an interest in all things tech, he enjoys learning about usability and the overall customer journey. In his free time, he enjoys traveling, skiing, video gaming, and playing the piano and drums.</p>
+          </span>
+        </div>
+
+        <div class="flex flex-col">
+          <div class="flex flex-row justify-between place-items-center mt-14">
+            <span>
+              <h1>Articles</h1>
+            </span>
+            <div class="flex p-2">
+              <span>
+                <p class="text-[#1CBAAA] cursor-pointer">Latest Articles</p>
+              </span>
+              <span class="pl-2">
+                <p class="text-[#B2AFAF] cursor-pointer border-l-[1px] pl-2 hover:border-b-[1px] hover:border-[#1CBAAA]">Most Popular</p>
+              </span>
+
+            </div>
+
+          </div>
+          <!--Card1-->
+          <div class="w-full sm:w-[742px] mt-10 sm:mt-8">
+            <div class="flex flex-col sm:flex-row shadow-lg">
+              <div>
+                <img class="h-[230px] w-[100%] sm:w-[250px] min-h-[auto] min-w-[auto]" src="https://i0.wp.com/www.namecheap.com/blog/wp-content/uploads/2021/08/In-the-News-09.png?fit=800%2C433&ssl=1" alt="article-card"/>
+              </div>
+              
+              <div class="block h-[200px] py-4 sm:py-6 pl-6">
+                <div class="sm:mb-4 mb-2 h-[99px] sm:w-[424px] block space-y-4">
+                  <p class="h-[99px] font-bold text-[15px] whitespace-normal sm:text-[20px]">Tech Beat by Namecheap – 4 November 2022</p>
+                </div>
+                <div class="text-[#B3AFAF] block sm:space-y-2 mt-[-20px]">
+                  <p class="text-[#B3AFAF]">Ivan S. | October 31, 2022.</p>
+                  <hr class="text-[#B3AFAF] mb-4 mt-4 w-[85%]"/>
+                  <p class="flex justify-between">
+                    <span>8 min read</span>
+                    <span class="flex flex-row pr-4"><img src="../src/images/chat.jpg"/><span>0</span></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Card2-->
+          <div class="w-full sm:w-[742px] mt-10 sm:mt-8">
+            <div class="flex flex-col sm:flex-row shadow-lg">
+              <div>
+                <img class="h-[230px] w-[100%] sm:w-[250px] min-h-[auto] min-w-[auto]" src="https://i0.wp.com/www.namecheap.com/blog/wp-content/uploads/2022/11/How-technology-is-transforming-diabetes-care.png?fit=794%2C431&ssl=1" alt="article-card"/>
+              </div>
+              
+              <div class="block h-[200px] py-4 sm:py-6 pl-6">
+                <div class="sm:mb-4 mb-2 h-[99px] sm:w-[424px] block space-y-4">
+                  <p class="h-[99px] font-bold text-[15px] whitespace-normal sm:text-[20px]">How technology is transforming diabetes care</p>
+                </div>
+                <div class="text-[#B3AFAF] block sm:space-y-2 mt-[-20px]">
+                  <p class="text-[#B3AFAF]">Ivan S. | October 31, 2022.</p>
+                  <hr class="text-[#B3AFAF] mb-4 mt-4 w-[85%]"/>
+                  <p class="flex justify-between">
+                    <span>8 min read</span>
+                    <span class="flex flex-row pr-4"><img src="../src/images/chat.jpg"/><span>0</span></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Card3-->
+          <div class="w-full sm:w-[742px] mt-10 sm:mt-8">
+            <div class="flex flex-col sm:flex-row shadow-lg">
+              <div>
+                <img class="h-[230px] w-[100%] sm:w-[250px] min-h-[auto] min-w-[auto]" src="https://i0.wp.com/www.namecheap.com/blog/wp-content/uploads/2022/07/Blog-02-01.png?fit=800%2C434&ssl=1" alt="article-card"/>
+              </div>
+              
+              <div class="block h-[200px] py-4 sm:py-6 pl-6">
+                <div class="sm:mb-4 mb-2 h-[99px] sm:w-[424px] block space-y-4">
+                  <p class="h-[99px] font-bold text-[15px] whitespace-normal sm:text-[20px]">Should you upgrade your project management platform?</p>
+                </div>
+                <div class="text-[#B3AFAF] block sm:space-y-2 mt-[-20px]">
+                  <p class="text-[#B3AFAF]">Ivan S. | October 31, 2022.</p>
+                  <hr class="text-[#B3AFAF] mb-4 mt-4 w-[85%]"/>
+                  <p class="flex justify-between">
+                    <span>8 min read</span>
+                    <span class="flex flex-row pr-4"><img src="../src/images/chat.jpg"/><span>0</span></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Card4-->
+          <div class="w-full sm:w-[742px] mt-10 sm:mt-8">
+            <div class="flex flex-col sm:flex-row shadow-lg">
+              <div>
+                <img class="h-[230px] w-[100%] sm:w-[250px] min-h-[auto] min-w-[auto]" src="https://i0.wp.com/www.namecheap.com/blog/wp-content/uploads/2022/05/EasyWP-5th-birthday-journey-clouds-1-cover.png?fit=800%2C433&ssl=1" alt="article-card"/>
+              </div>
+              
+              <div class="block h-[200px] py-4 sm:py-6 pl-6">
+                <div class="sm:mb-4 mb-2 h-[99px] sm:w-[424px] block space-y-4">
+                  <p class="h-[99px] font-bold text-[15px] whitespace-normal sm:text-[20px]">EasyWP turns 5: Journey to the Clouds and Above</p>
+                </div>
+                <div class="text-[#B3AFAF] block sm:space-y-2 mt-[-20px]">
+                  <p class="text-[#B3AFAF]">Ivan S. | October 31, 2022.</p>
+                  <hr class="text-[#B3AFAF] mb-4 mt-4 w-[85%]"/>
+                  <p class="flex justify-between">
+                    <span>8 min read</span>
+                    <span class="flex flex-row pr-4"><img src="../src/images/chat.jpg"/><span>0</span></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Card5-->
+          <div class="w-full sm:w-[742px] mt-10 sm:mt-8">
+            <div class="flex flex-col sm:flex-row shadow-lg">
+              <div>
+                <img class="h-[230px] w-[100%] sm:w-[250px] min-h-[auto] min-w-[auto]" src="https://i0.wp.com/www.namecheap.com/blog/wp-content/uploads/2022/04/NC-blog-Reboot-1-800x433-1.png?fit=800%2C433&ssl=1" alt="article-card"/>
+              </div>
+              
+              <div class="block h-[200px] py-4 sm:py-6 pl-6">
+                <div class="sm:mb-4 mb-2 h-[99px] sm:w-[424px] block space-y-4">
+                  <p class="h-[99px] font-bold text-[15px] whitespace-normal sm:text-[20px]">Reboot your site for FREE by Namecheap and Brizy</p>
+                </div>
+                <div class="text-[#B3AFAF] block sm:space-y-2 mt-[-20px]">
+                  <p class="text-[#B3AFAF]">Ivan S. | October 31, 2022.</p>
+                  <hr class="text-[#B3AFAF] mb-4 mt-4 w-[85%]"/>
+                  <p class="flex justify-between">
+                    <span>8 min read</span>
+                    <span class="flex flex-row pr-4"><img src="../src/images/chat.jpg"/><span>0</span></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Card6-->
+          <div class="w-full sm:w-[742px] mt-10 sm:mt-8">
+            <div class="flex flex-col sm:flex-row shadow-lg">
+              <div>
+                <img class="h-[230px] w-[100%] sm:w-[250px] min-h-[auto] min-w-[auto]" src="https://i0.wp.com/www.namecheap.com/blog/wp-content/uploads/2022/04/10-dos-and-donts-of-wireframing-01.png?fit=801%2C434&ssl=1" alt="article-card"/>
+              </div>
+              
+              <div class="block h-[200px] py-4 sm:py-6 pl-6">
+                <div class="sm:mb-4 mb-2 h-[99px] sm:w-[424px] block space-y-4">
+                  <p class="h-[99px] font-bold text-[15px] whitespace-normal sm:text-[20px]">10 dos and don’ts of wireframing</p>
+                </div>
+                <div class="text-[#B3AFAF] block sm:space-y-2 mt-[-20px]">
+                  <p class="text-[#B3AFAF]">Ivan S. | October 31, 2022.</p>
+                  <hr class="text-[#B3AFAF] mb-4 mt-4 w-[85%]"/>
+                  <p class="flex justify-between">
+                    <span>8 min read</span>
+                    <span class="flex flex-row pr-4"><img src="../src/images/chat.jpg"/><span>0</span></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex place-items-center justify-center mt-14">
+            <p class="w-16 text-[#B3AFAF] flex justify-center place-items-center border-b-4 border-red-700">6 of 6</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="text-gray-600 font-Montserrat">
+      <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div class="w-64 flex-shrink-0 md:mx-0 text-left px-4 ">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            
+            <span class="md:ml-3 text-3xl font-Inter ">SamorlHosting</span>
+          </a>
+          <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
+        </div>
+        <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 text-left">
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase font-Poppins ">Domains</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">First Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Second Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Third Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Fourth Link</a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">First Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer  hover:text-gray-800">Second Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Third Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Fourth Link</a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">First Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Second Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Third Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Fourth Link</a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">First Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Second Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Third Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Fourth Link</a>
+              </li>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-100 font-Poppins">
+        <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+          <p class="text-gray-500 text-sm text-center sm:text-left">© 2021 SamorlHosting &copy;
+            <a href="https://samorlhosting.com" target="_blank" rel="noopener noreferrer" class="text-blue-700 ml-1 cursor-pointer
+            " target="_blank">SamorlHosting</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+            <a href="https://facebook.com/samorlhosting" target="_blank" class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://twitter.com/samorlhosting" target="_blank" class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a href="https://instagram.com/samorlhosting" target="_blank" class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <!-- <a href="https://" class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a> -->
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

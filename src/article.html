@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TCC Blog Articles</title>
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,700&display=swap" rel="stylesheet">
+
+     <!--Stylesheet-->
+     <link rel="stylesheet" href="../src/css/tailwind-output.css" />
+
+     <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  </head>
+  <body>
+   <!--Header-->
+   <header class=" w-full border-b border-gray-100 relative pt-4 pb-4 z-20 bg-white" style="top: 0;">
+    <nav
+      class="flex align-middle justify-between relative mx-auto items-center w-full p-2 m-[0 30px] " 
+    >
+      <div class="w-full h-full gap-3 flex justify-start align-middle items-end">
+        <div>
+          <img
+            class="w-[200px] cursor-pointer"
+            src="https://www.namecheap.com/blog/wp-content/themes/theme-1_19_2/assets/images/namecheap.svg"
+            alt=""
+          />
+        </div>
+        <ul class="hidden md:flex border-l-[1px] border-black items-center justify-center">
+          <li><a class="pl-3 font-Poppins font-bold text-[26px] leading-[26px] text-[#666261]" href="">blog</a></li>
+        </ul>
+      </div>
+
+      
+        <div class="flex h-full w-full gap-10 items-end justify-end">
+          <a class="font-light text-[16px] hidden md:block leading-[16px] text-[#666261] cursor-pointer hover:border-b-[1px] border-b-slate-600"  href="" style="font-family: 'MuseoModerno', ;">Go To thecratersconnect.com</a>
+
+
+          <span id="open_aside_menu">
+            <svg
+              class="w-6 h-6 font-light text-[16px] leading-[16px] text-[#666261] cursor-pointer"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <aside id="sidenav_aside" style="z-index: 999999999;" class="bg-[#918a8ad4] hidden fixed top-0 right-0 left-0 w-full h-screen z-50">
+    <div class="bg-white py-10 fixed h-full w-1/2 md:w-2/6 right-0 float-right">
+      <ul class="flex flex-col gap-[0.6rem] p-5 relative ">
+        <!-- CLose Header Button -->
+        <div id="close_header_menu" class="absolute cursor-pointer right-1 top-1">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </div>
+        <li><a href="#">Creating & Managing Content
+        </a></li>
+        <li><a href="#">Domains</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">Engineering</a></li>
+        <li><a href="#">Entrepreneurial Lifestyle</a></li>
+        <li><a href="#">Managing a Business</a></li>
+        <li><a href="#">Marketing Tips</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Online Marketing</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Security & Privacy</a></li>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">WordPress</a></li>
+        <li><a href="#">Working From Home</a></li>
+        <li><a href="#">Sign up for email updates</a></li>
+        <li><a href="#">Current Deals</a></li>
+        <li><a href="#">GDPR Commitment</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Go to Samorlhosting.com</a></li>
+        <li><a href="#">Status & Updates</a></li>
+      </ul>
+      <span class="inline-flex ml-3 sm:ml-3 md:ml-3 sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a href="https://facebook.com/samorlhosting" target="_blank" class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a href="https://twitter.com/samorlhosting" target="_blank" class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a href="https://instagram.com/samorlhosting" target="_blank" class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+      </span>
+
+    </div>
+  </aside>
+    
+    <div class="articles_section">
+        <!-- Article Banner and Overlay Text -->
+        <div class="relative content-center">
+            <img class="min-h-[280px] min-w-[320px] overflow-x-hidden w-full object-cover" src="../src/images/blog-banner.jpg" alt="article-banner"/>
+            <h1 class="absolute text-[#fff] leading-[58px] sm:w-[1349px] text-3xl sm:text-7xl text-center block 
+            tracking-[-1.27px] font-black pt-[50px] py-0 px-4 inset-x-0 inset-y-[111px] z-10 mx-auto my-4 place-content-center place-items-center"
+            >
+              Last Articles
+            </h1>
+        </div>
+        
+        <!-- Article items section -->
+        <div class="w-[1200px] h-[1915px] flex flex-col sm:flex-row py-0 px-4 mt-4 mb-[72px] mx-[10px] sm:mx-[30px]">
+          <div class="min-h-[auto] min-w-[auto] w-[742px] flex-auto mr-[56px] my-0 ml-0 mt-4">
+            <p class="flex flex-col sm:flex-row h-7 justify-between w-[742px] pb-4">
+              <span class="block font-[700] h-7 text-[26px] text-[#333130] leading-7 min-w-[auto] min-h-auto">Articles</span>
+              <span class="block h-6 text-[16px] leading-6 min-h-0 min-w-0 pt-[8px]">
+                <span class="text-[green] cursor-pointer font-light">Latest Articles</span> | <span class=" cursor-pointer text-[#b3AfAf]">Most Popular</span>
+              </span>
+            </p>
+            
+            <!-- Blog Card Section -->
+            <div class="w-[265px] sm:w-[742px] mt-10 sm:mt-8">
+              <div class="flex flex-col sm:flex-row shadow-lg">
+                <div>
+                  <img class="h-[230px] w-[100%] sm:w-[250px] min-h-[auto] min-w-[auto]" src="../src/images/article-1.jpg" alt="article-card"/>
+                </div>
+                
+                <div class="block h-[200px] py-4 sm:py-6 pl-6">
+                  <div class="sm:mb-4 mb-2 h-[99px] sm:w-[424px] block space-y-4">
+                    <p class="h-[99px] font-bold text-[15px] whitespace-normal sm:text-[20px]">How to improve workplace collaboration</p>
+                  </div>
+                  <div class="text-[#B3AFAF] block sm:space-y-2 mt-[-20px]">
+                    <p class="text-[#B3AFAF]">Ivan S. | October 31, 2022.</p>
+                    <hr class="text-[#B3AFAF] mb-4 mt-4 w-[85%]"/>
+                    <p class="flex justify-between">
+                      <span>8 min read</span>
+                      <span class="flex flex-row pr-4"><img src="../src/images/chat.jpg"/><span>0</span></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-[265px] sm:w-[742px] mt-10 sm:mt-8">
+              <div class="flex flex-col sm:flex-row shadow-lg">
+                <div>
+                  <img class="h-[230px] w-[100%] sm:w-[250px] min-h-[auto] min-w-[auto]" src="../src/images/article-1.jpg" alt="article-card"/>
+                </div>
+                
+                <div class="block h-[200px] py-4 sm:py-6 pl-6">
+                  <div class="sm:mb-4 mb-2 h-[99px] sm:w-[424px] block space-y-4">
+                    <p class="h-[99px] font-bold text-[15px] whitespace-normal sm:text-[20px]">Tech Beat by Namecheap - 28 October 2022 </p>
+                  </div>
+                  <div class="text-[#B3AFAF] block sm:space-y-2 mt-[-20px]">
+                    <p class="text-[#B3AFAF]">Rodney B. | October 28, 2022.</p>
+                    <hr class="text-[#B3AFAF] mb-4 mt-4 w-[85%]"/>
+                    <p class="flex justify-between">
+                      <span>6 min read</span>
+                      <span class="flex flex-row pr-4"><img src="../src/images/chat.jpg"/><span>0</span></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-[265px] sm:w-[742px] mt-10 sm:mt-8">
+              <div class="flex flex-col sm:flex-row shadow-lg">
+                <div>
+                  <img class="h-[230px] w-[100%] sm:w-[250px] min-h-[auto] min-w-[auto]" src="../src/images/article-1.jpg" alt="article-card"/>
+                </div>
+                
+                <div class="block h-[200px] py-4 sm:py-6 pl-6">
+                  <div class="sm:mb-4 mb-2 h-[99px] sm:w-[424px] block space-y-4">
+                    <p class="h-[99px] font-bold text-[15px] whitespace-normal sm:text-[20px]">Why small businesses shouldn’t fear recession</p>
+                  </div>
+                  <div class="text-[#B3AFAF] block sm:space-y-2 mt-[-20px]">
+                    <p class="text-[#B3AFAF]">Undercover G. | Oct 25, 2022</p>
+                    <hr class="text-[#B3AFAF] mb-4 mt-4 w-[85%]"/>
+                    <p class="flex justify-between">
+                      <span>10 min read</span>
+                      <span class="flex flex-row pr-4"><img src="../src/images/chat.jpg"/><span>0</span></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-[265px] sm:w-[742px] mt-10 sm:mt-8">
+              <div class="flex flex-col sm:flex-row shadow-lg">
+                <div>
+                  <img class="h-[230px] w-[100%] sm:w-[250px] min-h-[auto] min-w-[auto]" src="../src/images/article-1.jpg" alt="article-card"/>
+                </div>
+                
+                <div class="block h-[200px] py-4 sm:py-6 pl-6">
+                  <div class="sm:mb-4 mb-2 h-[99px] sm:w-[424px] block space-y-4">
+                    <p class="h-[99px] font-bold text-[15px] whitespace-normal sm:text-[20px]">What the digital world thinks of the recession</p>
+                  </div>
+                  <div class="text-[#B3AFAF] block sm:space-y-2 mt-[-20px]">
+                    <p class="text-[#B3AFAF]">Undercover G. | Oct 25, 2022</p>
+                    <hr class="text-[#B3AFAF] mb-4 mt-4 w-[85%]"/>
+                    <p class="flex justify-between">
+                      <span>4 min read</span>
+                      <span class="flex flex-row pr-4"><img src="../src/images/chat.jpg"/><span>0</span></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination Section -->
+            <div class=" mt-6 sm:place-content-center w-[275px] place-items-center sm:text-center">
+              <p class="text-[#B3AFAF] text-[16px] text-center">7 of 1064</p>
+              <span></span>
+              <p class="text-[#f14722] font-bold pt-3 text-center">Show More Articles</p>
+            </div>
+          </div>
+
+          <!-- Popular Articles -->
+          <div class="h-max w-[350px] mt-6 flex-none sm:border-l-[2px] sm:border-[#E6E4E4] sm:pl-[56px]">
+            <p class="flex flex-col sm:flex-row h-7 justify-between">
+              <span class="block font-[700] pt-4 pb-4 h-7 text-[18px] sm:text-[26px] text-[#333130] leading-7 min-w-[auto] min-h-auto">Most Popular</span>
+              <span class="block h-6 text-[16px] leading-6 min-h-0 min-w-0 pt-6">
+                <span class="text-[green] cursor-pointer font-light">Week</span> | <span class="text-[#b3AfAf] cursor-pointer">Month</span>
+              </span>
+            </p>
+
+            <div class="sm:mt-4 mt-8 w-[275px]">
+              <p class="flex flex-col pb-6 pt-8">
+                <span class="text-[15px] whitespace-normal sm:text-[20px] font-medium sm:font-bold">Why Using a VPN While Traveling Is Essential</span>
+                <span class="text-[#B3AFAF] pt-2">Daniel A. | 
+                  Aug 7, 2019</span>
+              </p>
+
+              <p class="flex flex-col pb-6">
+                <span class="text-[15px] whitespace-normal sm:text-[20px] font-medium sm:font-bold">How to Create a Successful Digital Portfolio</span>
+                <span class="text-[#B3AFAF] pt-2">Tara S. | 
+                  May 15, 2019</span>
+              </p>
+
+              <p class="flex flex-col pb-6">
+                <span class="text-[15px] whitespace-normal sm:text-[20px] font-medium sm:font-bold">How to Produce Content that Delivers Real Value</span>
+                <span class="text-[#B3AFAF] pt-2">Jessica M. | 
+                  Aug 2, 2019</span>
+              </p>
+
+              <p class="flex flex-col pb-6">
+                <span class="text-[15px] whitespace-normal sm:text-[20px] font-medium sm:font-bold">Standing Up to ICANN to Keep Domain Prices in Check</span>
+                <span class="text-[#B3AFAF] pt-2">Richard K. | 
+                  Jul 29, 2019</span>
+              </p>
+            </div>
+          
+            <!-- Related Categories -->
+            <div class="mt-6 h-[209px] block w-[337px] mb-[20px] sm:mb-[48px]">
+              <h4 class="block h-[32px] font-bold text-[18px] sm:text-[26px]">Related Categories</h4>
+              <div class="mt-4">
+                <p class="flex flex-row mb-3">
+                  <span class="h-[20px]"><img class="h-[24px] w-[24px] text-[#18BAAA]" src="../src/images/arrow.png"/></span>
+                  <span class="font-bold text-[15px] sm:text-[20px]">Managing a Business</span>
+                </p>
+  
+                <p class="flex flex-row mb-2">
+                  <span class="h-[20px]"><img class="h-[24px] w-[24px] text-[#18BAAA]" src="../src/images/arrow.png"/></span>
+                  <span class="font-bold text-[15px] sm:text-[20px]">News</span>
+                </p>
+  
+                <p class="flex flex-row mb-2">
+                  <span class="h-[20px]"><img class="h-[24px] w-[24px] text-[#18BAAA]" src="../src/images/arrow.png"/></span>
+                  <span class="font-bold text-[15px] sm:text-[20px]">Tech Roundup</span>
+                </p>
+  
+                <p class="flex flex-row mb-2">
+                  <span class="h-[20px]"><img class="h-[24px] w-[24px] text-[#18BAAA]" src="../src/images/arrow.png"/></span>
+                  <span class="font-bold text-[15px] sm:text-[20px]">Entrepreneurial Lifestyle</span>
+                </p>
+              </div>
+            </div>
+          
+            <!-- Get Latest Deals -->
+            <div class="h-[400px] sm:h-[380px] w-[275px] sm:w-[337px] border-[5px] border-[#18BAAA] mt-2 sm:mt-4 mb-6 sm:mb-4 outline-2 px-[15px] sm:px-[19px] py-[19px]">
+              <span class="block sm:w-[289px] mb-[8px] text-[26px] sm:text-[32px] font-bold">
+                Get the latest news and deals
+              </span>
+              <span class="block">
+                Sign up for email updates covering blogs, offers, and lots more.
+              </span>
+              <span class="text-[12px] block h-[14px] font-bold pt-2">
+                I'd like to receive:
+              </span>
+          
+              <div class="mt-4 flex flex-col">
+                <div>
+                  <input type="checkbox">
+                  <span>New blog post alerts</span>
+                </div>
+                
+                <div>
+                  <input type="checkbox">
+                  <span>Regular newsletter and special offers</span>
+                </div>
+          
+                <div class="h-[40px] mt-3 w-[230px] flex flex-row">
+                  <input class="border-[2px] border-[gray] outline-0 w-[60%] rounded-tl-lg rounded-bl-lg  border-r-0 py-[8px] pl-[12px] text-[16px]" type="text" placeholder="Enter your email"/>
+                  <button class="text-[#fff] bg-[#F14722] outline-0 w-[40%] h-[40px] text-[14px] sm:w-[85px] font-medium rounded-tr-md rounded-br-md">
+                    Subscribe
+                  </button>
+                </div>
+          
+                <div class="mt-2">
+                  <p class="text-[12px]"><span class="text-[#B3AFAF]">
+                    Your data is kept safe and private in line with our values and the
+                  </span> <span class="text-[#F14722]">GDPR.</span></p>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Current Deals -->
+            <div class="h-[122px] w-[275px] sm:w-[337px] mt-6 rounded-md p-4 bg-[#18BAAA] border-[5px] border-[#18BAAA]">
+              <p class="text-[26px] sm:text-[32px] font-black text-[#fff]">Current Deals at Namecheap</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+     <!--Footer  -->
+     <footer class="text-gray-600 font-Montserrat">
+      <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div class="w-64 flex-shrink-0 md:mx-0 text-left px-4 ">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            
+            <span class="md:ml-3 text-3xl font-Inter ">thecratersconnect</span>
+          </a>
+          <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
+        </div>
+        <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 text-left">
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase font-Poppins ">Domains</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">First Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Second Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Third Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Fourth Link</a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">First Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Second Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Third Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Fourth Link</a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">First Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Second Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Third Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Fourth Link</a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">First Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Second Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Third Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 cursor-pointer hover:text-gray-800">Fourth Link</a>
+              </li>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-100 font-Poppins">
+        <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+          <p class="text-gray-500 text-sm text-center sm:text-left">© 2021 thecratersconnect &copy;
+            <a href="https://thecratersconnect.com" target="_blank" rel="noopener noreferrer" class="text-blue-700 ml-1" target="_blank">thecratersconnect</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+            <a href="https://facebook.com/thecratersconnect" target="_blank" class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://twitter.com/thecratersconnect" target="_blank" class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a href="https://instagram.com/thecratersconnect" target="_blank" class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <!-- <a href="https://" class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a> -->
+          </span>
+        </div>
+      </div>
+    </footer>
+     
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+

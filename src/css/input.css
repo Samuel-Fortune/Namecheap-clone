@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,900&family=Slabo+27px&display=swap');
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+header.active {
+  height: 80px;
+  transition: all 1s ease-in-out;
+  z-index: 2000;
+}
+
+header.active {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+header {
+  transition: all 1s ease-in-out;
+  z-index: 2000;
+}
+
+aside#sidenav_aside {
+  animation: slideFromLeft 3s ease;
+}
+
+
+@keyframes slideFromLeft  {
+  from  {
+    right: 1000px;
+  }
+
+  to {
+    left: 0px;
+  }
+}
+
+
+
+.promo, .az-hero__image {
+  border: 100%;
+}
+.promo .az-hero__body div h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  
+
+}
+
+.promo .az-productpromo .az-hero-image__holder {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+z-index: -1;
+}
+
+.promo .az-scope * {
+  box-sizing: border-box;
+}
+
+.promo .az-productpromos .az-hero {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2;
+  text-align: center;
+}
+
+.promo.az-scope {
+  font-family: GB Museo Sans,Arial,Helvetica,sans-serif;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+.promo .az-productpromos .az-hero__image-holder:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 4px 8px rgb(0 0 0 / 33%);
+  content: "";
+  z-index: 1;
+}
+
+.promo .az-scope :before {
+  box-sizing: border-box;
+}
+
+.promo .az-productpromos .az-hero h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.promo .az-scope h1 {
+font-weight: 700;
+line-height: inherit;
+}
+
+.promo .az-scope * {
+  box-sizing: border-box;
+}
+
+ h1 {
+  display: block;  
+  font-size: 2em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.error {
+  @apply bg-red-500;
+}
+
+.success {
+  @apply bg-green-500;
+}
+
+.card {
+  box-shadow: 0 2px 4px -1px rgb(29 29 32 / 16%), 0 4px 5px 0 rgb(29 29 32 / 5%), 0 1px 10px 0 rgb(29 29 32 / 8%);
+}
+
+.card:hover {
+  text-decoration: none;
+  box-shadow: 0 5px 5px -3px rgb(0 0 0 / 16%), 0 8px 10px 1px rgb(0 0 0 / 5%), 0 3px 14px 2px rgb(0 0 0 / 8%);
+}
+
+
+header {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* [ === RESPONSIVENESS === ] */
+
+@medis screen and (max-width: 400px) {
+  header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 624px){
+  .az-productpromos .az-promos-card-list__wrapper {
+      max-width: 100%;
+  }
+
+  header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 980px) {
+  .az-productpromos .az-promos-card-list__wrapper {
+    max-width: 936px;
+  }
+}
+
+@media screen and (min-width: 1248px) {
+
+  .az-productpromos .az-promos-card-list__wrapper {
+      max-width: 1268px;
+  }
+}
+
+
+
+aside ul {
+  height: 100%;
+  overflow-y: auto;
+}
